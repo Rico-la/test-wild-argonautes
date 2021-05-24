@@ -38,7 +38,7 @@ const app = {
         try {
 
             //on utilise fetch en POST pour envoyer les infos à l'API et ajouter le nouveau argonaute en BDD
-            const result = await fetch(`${app.base_url}/v1/argonaute`, {
+            const result = await fetch(`${app.base_url}/argonaute`, {
                 method: 'POST',
                 body: formData
             });
