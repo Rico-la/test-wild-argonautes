@@ -10,7 +10,7 @@ const { Client } = require('pg');
 //* On crée une instance
 //* Cette instance est notre lien JS vers la BDD
 const client = new Client({
-    connectionString: process.env.PG_URL,
+    connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false
       }
@@ -18,8 +18,6 @@ const client = new Client({
 
 //* On connecte le client pour le rendre prêt à l'emploi
 client.connect();
-
-console.log(client);
 
 //* On place le client connecté dans l'export pour le rendre disponible dans d'autres fichiers de notre appli
 module.exports = client;

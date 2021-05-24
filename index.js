@@ -27,13 +27,15 @@ app.use(express.json());
 
 //* Paramétrage des CORS pour permettre de request l'api
 app.use(cors({
-    origin: '*'
-}));
+    origin:'*',
+}
+   
+));
 
 //* On ajoute le dossier des ressources statiques
 app.use(express.static('./public'));
 
 //* Routage
-app.use('/v1', router);
+app.use('/', router);
 
 app.listen(PORT, () =>  console.log(`Server running on http://localhost:${PORT}`));

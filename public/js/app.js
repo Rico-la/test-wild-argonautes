@@ -67,9 +67,14 @@ const app = {
 
     // Méthode pour récupérer tous les argonautes présent en db
     getArgonautesFromAPI: async () => {
+        const result = await fetch(`${app.base_url}/v1/argonaute`, {
+            method: 'Get',
+            mode: 'no-cors',
+        });
+        console.log(result);
+       
         try {
-            const result = await fetch(`${app.base_url}/v1/argonaute`);
-
+            
             if(result.ok) {
                 const json = await result.json();
                 //avec fetch, on obtient un tableau d'objects argonautes
