@@ -1,7 +1,7 @@
 
 const app = {
     // pour pouvoir fetch sur notre API
-    base_url: 'http://localhost:3000',
+    base_url: 'https://argonaute-wild.herokuapp.com/',
 
     // fonction d'initialisation, lancée au chargement de la page
     init: async () => {
