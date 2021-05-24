@@ -67,7 +67,7 @@ const app = {
 
     // Méthode pour récupérer tous les argonautes présent en db
     getArgonautesFromAPI: async () => {
-        const result = await fetch(`${app.base_url}/v1/argonaute`, {
+        const result = await fetch(`${app.base_url}/argonaute`, {
             method: 'Get',
             mode: 'no-cors',
         });
