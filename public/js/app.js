@@ -5,7 +5,7 @@ const app = {
 
     // fonction d'initialisation, lancée au chargement de la page
     init: async () => {
-        console.log('app init');
+        // console.log('app init');
         
         //au chargement de la page, on souhaite récupérer les listes existantes en BDD
         //La méthode étant déclarée async, on doit attendre qu'elle ait terminé son traitement avant de passer à la suite
@@ -67,14 +67,13 @@ const app = {
 
     // Méthode pour récupérer tous les argonautes présent en db
     getArgonautesFromAPI: async () => {
-        const result = await fetch(`${app.base_url}/argonaute`, {
-            method: 'Get',
-            mode: 'no-cors',
-        });
-        console.log(result);
-       
+        
         try {
-            
+            const result = await fetch(`${app.base_url}/argonaute`, {
+                method: 'Get',
+                mode: 'no-cors',
+            });
+
             if(result.ok) {
                 const json = await result.json();
                 //avec fetch, on obtient un tableau d'objects argonautes
@@ -104,10 +103,6 @@ const app = {
         section[0].appendChild(div);
     },
 }
-
-
-
-
 
 
 // On accroche un écouteur d'évènement sur le document : quand le chargement est terminé, on lance app.init
