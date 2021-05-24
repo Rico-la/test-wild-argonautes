@@ -27,7 +27,7 @@ app.use(express.json());
 
 //* Paramétrage des CORS pour permettre de request l'api
 app.use(cors({
-    origin: ['localhost', 'null']
+    origin: '*'
 }));
 
 //* On ajoute le dossier des ressources statiques
