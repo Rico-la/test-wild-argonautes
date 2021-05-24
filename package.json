@@ -1,0 +1,20 @@
+{
+  "name": "test-wild-argonautes",
+  "version": "1.0.0",
+  "description": "form input to add a new \"argonaute\" to the Jason's crew",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Eurico Da Custodia",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "pg": "^8.6.0"
+  }
+}

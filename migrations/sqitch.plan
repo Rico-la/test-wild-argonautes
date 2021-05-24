@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=argonaute
+
+init 2021-05-15T09:18:22Z Etudiant O'clock <student@teleporter> # Création de la table
+functions/insert 2021-05-15T10:55:09Z Etudiant O'clock <student@teleporter> # création d'une fonction d'insertion

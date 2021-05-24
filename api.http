@@ -1,0 +1,11 @@
+### GET ALL CREWMATE PRESENT IN DB
+GET http://localhost:3000/v1/argonaute
+
+### POST A NEW CREWMATE 
+POST http://localhost:3000/v1/argonaute
+Content-Type: application/json
+
+{
+ "name": "Coachlyphillis"   
+}
+
